@@ -1,4 +1,9 @@
 /* Global Rules */
+
+:root {
+  --main-color: #19c8fa;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -51,9 +56,7 @@ ul {
 
 /* Header */
 
-header {
-  
-}
+header {}
 
 header .container {
   display: flex;
@@ -78,5 +81,49 @@ header .logo img {
 
 header nav {
   flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+
+header nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 40px 10px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+header nav ul li a.active, header nav ul li a:hover {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+header nav .form {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    margin-left: 30px;
+    border-left: 1px solid white;
+}
+
+header nav .form i {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
 /* Header */
