@@ -218,4 +218,43 @@ header nav .form i {
   font-size: 14px;
   line-height: 2;
 }
+
+.landing .change-background {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ddd;
+  cursor: pointer;
+}
+
+.landing .fa-chevron-left{
+  left: 30px;
+}
+.landing .fa-chevron-right {
+  right: 30px;
+}
+
+.landing .bullets {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateY(-50%);
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.landing .bullets li {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.landing .bullets li.active {
+  background-color: var(--main-color);
+}
 /* Landing */
