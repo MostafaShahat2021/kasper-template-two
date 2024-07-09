@@ -319,3 +319,64 @@ header nav .form i {
   background-color: var(--main-color);
 }
 /* Landing */
+
+/* services */
+.services-container {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  justify-content: space-around;
+  padding: 30px;
+  /* gap: 5%; */
+  
+}
+
+@media (max-width: 768px){
+  .services-container{
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+.services-container .col {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+}
+
+.services-container .col .card {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
+  padding: 20px;
+}
+
+.services-container .col .card .icon {
+  width: 20%;
+  height: 100%;
+  text-align: left;
+  font-size: 25px;
+}
+
+.services-container .col .card .icon i{
+  color: #333;
+}
+
+.services-container .col .card .content {
+  /* border: 1px solid greenyellow; */
+  width: 80%
+}
+.services-container .col .card .content h3 {
+  color: var(--main-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.services-container .col .card .content p{
+  color: #777;
+  padding: 5px;
+}
+
+
+/* services */
