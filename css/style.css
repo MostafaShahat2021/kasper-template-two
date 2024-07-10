@@ -59,17 +59,19 @@ ul {
 /* Global Rules */
 
 /* Components */
-.main-heading{
+.main-heading {
   text-align: center;
 }
-.main-heading h2{
+
+.main-heading h2 {
   font-weight: normal;
   font-size: 40px;
   text-transform: uppercase;
   position: relative;
   margin-bottom: 70px;
 }
-.main-heading h2::before{
+
+.main-heading h2::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -80,7 +82,8 @@ ul {
   background-color: var(--color-darker);
 
 }
-.main-heading h2::after{
+
+.main-heading h2::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -92,13 +95,15 @@ ul {
   width: 15px;
   height: 15px;
 }
-.main-heading p{
+
+.main-heading p {
   width: 550px;
   max-width: 100%;
   color: var(--color-dark);
   margin: 0 auto 100px;
   line-height: 2;
 }
+
 /* Components */
 
 /* Header */
@@ -175,7 +180,7 @@ header nav ul {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgb(0, 0, 0,  75%);
+    background-color: rgb(0, 0, 0, 75%);
   }
 
   header nav ul li a {
@@ -235,7 +240,7 @@ header nav .form i {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0,  60%);
+  background-color: rgb(0, 0, 0, 60%);
 }
 
 .landing .text {
@@ -255,11 +260,12 @@ header nav .form i {
   max-width: 500px;
 }
 
-@media (max-width:767px){
+@media (max-width:767px) {
   .landing .text {
     width: 100%;
   }
-  .landing .text .content{
+
+  .landing .text .content {
     max-width: 100%;
   }
 }
@@ -270,6 +276,7 @@ header nav .form i {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
 .landing .text .content p {
   font-size: 14px;
   line-height: 2;
@@ -283,15 +290,16 @@ header nav .form i {
   cursor: pointer;
 }
 
-@media (max-width:767px){
+@media (max-width:767px) {
   .landing .change-background {
     display: none;
   }
 }
 
-.landing .fa-chevron-left{
+.landing .fa-chevron-left {
   left: 30px;
 }
+
 .landing .fa-chevron-right {
   right: 30px;
 }
@@ -319,6 +327,7 @@ header nav .form i {
 .landing .bullets li.active {
   background-color: var(--main-color);
 }
+
 /* Landing */
 
 /* services */
@@ -327,8 +336,8 @@ header nav .form i {
   padding-bottom: var(--section-padding);
 }
 
-@media (min-width: 768px){
-  .services .services-container{
+@media (min-width: 768px) {
+  .services .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     column-gap: 40px;
@@ -340,19 +349,20 @@ header nav .form i {
   display: flex;
 }
 
-.services-container .card i{
+.services-container .card i {
   font-size: xx-large;
   margin-right: 50px;
   color: #333;
 }
 
-@media (max-width:991px){
+@media (max-width:991px) {
   .services-container .card {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 40px;
   }
+
   .services-container .card i {
     margin: 0 0 30px;
   }
@@ -363,11 +373,91 @@ header nav .form i {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-.services-container .card .content p{
+
+.services-container .card .content p {
   color: var(--text-color);
   padding: 5px;
   line-height: 2;
 }
 
-
 /* services */
+
+/* Design Section */
+
+.design {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-image: url("../images/design-features.jpg");
+  background-size: cover;
+  height: 60vh;
+}
+
+.design .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 60%);
+
+}
+
+.design .image {
+  position: absolute;
+  z-index: 2;
+  left: 15%;
+  top: 40%;
+
+}
+
+.design .hedden {
+  background-color: var(--color-light);
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  bottom: -30%;
+  z-index: 3;
+}
+
+.design .text {
+  background-color: var(--transparent-color);
+  color: var(--color-light);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 50%;
+  height: 75%;
+  padding: 2%;
+}
+
+.design .text h2 {
+  color: var(--text-color);
+  padding: 2%;
+}
+
+.design .text ul,
+.design .text ul li i {
+  padding: 2%;
+}
+
+@media (max-width: 991px) {
+  .design {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .design .image,
+  .design .hedden {
+    display: none;
+  }
+
+  .design .text {
+    width: 100%;
+  }
+}
+
+
+/* Design Section */
