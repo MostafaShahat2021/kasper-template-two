@@ -594,3 +594,25 @@ header nav .form i {
   cursor: pointer;
 }
 /* Video Section  */
+
+/* About Section  */
+.about {
+  padding-top: var(--section-padding);
+  overflow: hidden;
+  text-align: center;
+}
+
+.about img {
+  position: relative;
+  bottom: -120px;
+  margin-top: -120px;
+  max-width: 100%;
+}
+
+@media (max-width:768px){
+  .about img {
+    bottom: -73px;
+    margin-top: -73px;
+  }
+}
+/* About Section  */
