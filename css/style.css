@@ -565,7 +565,6 @@ header nav .form i {
 .video .text {
   position: absolute;
   width: 100%;
-  height: 100%;
   top: 50%;
   transform: translateY(-50%);
   background-color: var(--transparent-color);
@@ -593,6 +592,13 @@ header nav .form i {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width:768px){
+  .video .text {
+    height: 80%;
+  }
+
 }
 /* Video Section  */
 
