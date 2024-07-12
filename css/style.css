@@ -782,4 +782,55 @@ header nav .form i {
   background-color: var(--main-color);
   border-color: var(--main-color);
 }
+
+
+.our-skills .skills .prog-holder {
+  margin-bottom: 40px;
+  /* background-color: #aaa; */
+
+}
+.our-skills .skills .prog-holder h4 {
+  font-weight: normal;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.our-skills .skills .prog-holder .prog {
+  height: 30px;
+  background-color: #dedadc;
+}
+
+.our-skills .skills .prog-holder .prog span {
+  position: relative;
+  display: block;
+  height: 100%;
+  background-color: var(--main-color);
+
+}
+
+.our-skills .skills .prog-holder .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  color: var(--color-light);
+  background-color: var(--color-darker);
+  top: -40px;
+  right: -18px;
+  padding: 4px 0;
+  width: 40px;
+  text-align: center;
+  border-radius: 5px;
+
+}
+
+.our-skills .skills .prog-holder .prog span::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 8px;
+  border-color: black transparent transparent;
+  top: -15px;
+  right: -8px;
+  
+}
+
 /* skills section  */
