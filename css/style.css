@@ -405,10 +405,11 @@ header nav .form i {
   top: 0;
   left: 0;
   background-color: rgb(0, 0, 0, 60%);
-  
+
 }
 
-.design .image, .design .text {
+.design .image,
+.design .text {
   position: relative;
   z-index: 2;
   flex: 1;
@@ -448,7 +449,7 @@ header nav .form i {
 }
 
 @media (max-width: 768px) {
-  .design .image{
+  .design .image {
     display: none;
   }
 }
@@ -471,7 +472,7 @@ header nav .form i {
   padding: 10px;
 }
 
-.portfolio .shuffle li.active{
+.portfolio .shuffle li.active {
   background-color: var(--main-color);
   color: var(--color-light);
 }
@@ -491,19 +492,20 @@ header nav .form i {
   bottom: 0;
 }
 
-.portfolio .imgs-container .box:hover img{
+.portfolio .imgs-container .box:hover img {
   transform: rotate(3deg) scale(1.1);
 }
 
-@media (min-width:768px){
-  .portfolio .imgs-container .box{
+@media (min-width:768px) {
+  .portfolio .imgs-container .box {
     flex-basis: 50%;
   }
-@media (min-width:1199px){
-  .portfolio .imgs-container .box{
-    flex-basis: 25%;
+
+  @media (min-width:1199px) {
+    .portfolio .imgs-container .box {
+      flex-basis: 25%;
+    }
   }
-}
 }
 
 .portfolio .imgs-container .box img {
@@ -524,11 +526,12 @@ header nav .form i {
 .portfolio .imgs-container .box .caption h4 {
   margin-bottom: 10px;
 }
+
 .portfolio .imgs-container .box .caption p {
   color: var(--main-color);
 }
 
-.portfolio .more{
+.portfolio .more {
   display: block;
   padding: 15px 20px;
   background-color: var(--main-color);
@@ -573,7 +576,7 @@ header nav .form i {
   text-align: center;
 }
 
-.video .text h2{
+.video .text h2 {
   font-weight: normal;
   margin-bottom: 30px;
 }
@@ -594,12 +597,13 @@ header nav .form i {
   cursor: pointer;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
   .video .text {
     height: 80%;
   }
 
 }
+
 /* Video Section  */
 
 /* About Section  */
@@ -616,12 +620,13 @@ header nav .form i {
   max-width: 100%;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
   .about img {
     bottom: -73px;
     margin-top: -73px;
   }
 }
+
 /* About Section  */
 
 /* Stats Section  */
@@ -651,25 +656,25 @@ header nav .form i {
   flex-wrap: wrap;
 }
 
-.stats .container .box{
+.stats .container .box {
   padding: 50px;
   background-color: var(--transparent-color);
   color: var(--color-light);
 }
 
-@media (max-width:767px){
+@media (max-width:767px) {
   .stats .container .box {
     flex-basis: 100%;
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .stats .container .box {
     flex-basis: 50%;
   }
 }
 
-@media (min-width:991px){
+@media (min-width:991px) {
   .stats .container .box {
     flex-basis: 25%;
   }
@@ -695,6 +700,7 @@ header nav .form i {
 .stats .container .box p {
   font-size: 14px;
 }
+
 /* Stats Section  */
 
 /* skills section  */
@@ -710,20 +716,20 @@ header nav .form i {
   flex-wrap: wrap;
 }
 
-@media (min-width: 992px){
-  .our-skills .container > article {
+@media (min-width: 992px) {
+  .our-skills .container>article {
     flex-basis: 45%;
   }
 }
 
-.our-skills .container > article > h3 {
+.our-skills .container>article>h3 {
   font-weight: normal;
   margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.our-skills .container > article > p {
+.our-skills .container>article>p {
   text-align: center;
   margin-bottom: 60px;
   line-height: 1.8;
@@ -735,10 +741,11 @@ header nav .form i {
   margin-bottom: 30px;
   align-items: center;
 }
-.our-skills .testimonials .content img{
+
+.our-skills .testimonials .content img {
   width: 100px;
   margin-right: 50px;
-  border-radius: 50%  ;
+  border-radius: 50%;
 }
 
 @media (max-width:767px) {
@@ -746,7 +753,8 @@ header nav .form i {
     flex-direction: column;
     text-align: center;
   }
-  .our-skills .testimonials .content img{
+
+  .our-skills .testimonials .content img {
     margin: 0 auto 20px;
   }
 }
@@ -778,7 +786,7 @@ header nav .form i {
   margin-right: 10px;
 }
 
-.our-skills .testimonials .bullits li.active{
+.our-skills .testimonials .bullits li.active {
   background-color: var(--main-color);
   border-color: var(--main-color);
 }
@@ -789,6 +797,7 @@ header nav .form i {
   /* background-color: #aaa; */
 
 }
+
 .our-skills .skills .prog-holder h4 {
   font-weight: normal;
   margin-bottom: 15px;
@@ -830,7 +839,7 @@ header nav .form i {
   border-color: black transparent transparent;
   top: -15px;
   right: -8px;
-  
+
 }
 
 /* skills section  */
@@ -844,7 +853,7 @@ header nav .form i {
   background-size: cover;
   color: white;
   text-align: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .quote::before {
@@ -867,7 +876,7 @@ header nav .form i {
   font-size: 30px;
 }
 
-.quote .container q::before{
+.quote .container q::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: '\f10d';
@@ -892,7 +901,7 @@ header nav .form i {
 
 /* Pricing  */
 
-.pricing{
+.pricing {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
@@ -909,6 +918,7 @@ header nav .form i {
   background-color: whitesmoke;
 
 }
+
 .pricing .plans .plan .head {
   padding: 40px 20px;
   border-top: 1px solid var(--main-color);
@@ -935,6 +945,7 @@ header nav .form i {
   top: 89px;
   left: 78px;
 }
+
 .pricing .plans .plan .head sub {
   font-size: 25px;
   font-weight: normal;
@@ -943,3 +954,67 @@ header nav .form i {
   right: 46px;
 }
 
+.pricing .plans .plan ul {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .plan ul li {
+  padding: 20px;
+  position: relative;
+}
+
+.pricing .plans .plan ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 140px;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+} 
+
+
+.pricing .plans .plan .foot a {
+  display: block;
+  padding: 20px;
+  margin: 30px auto;
+  width: fit-content;
+  border: 1px solid var(--main-color);
+  color: #19c8fa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.pricing .plans .plan .foot a:hover {
+  background-color: var(--main-color);
+  color: var(--color-light);
+  border: 1px solid var(--color-light);
+  transform: scale(1.1);
+}
+
+.pricing .contact-text{
+  text-align: center;
+  margin: 50px auto 20px;
+  font-size: 20px;
+}
+
+.pricing .contact-link {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 15px 30px;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: var(--color-light);
+  border-radius: 5%;
+  transition: 0.3s;
+}
+
+.pricing .contact-link:hover{
+  background-color: var(--color-light);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  transform: scale(1.1);
+}
+/* Pricing  */
