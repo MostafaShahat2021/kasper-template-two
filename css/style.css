@@ -853,10 +853,10 @@ header nav .form i {
   background-size: cover;
   color: white;
   text-align: center;
-  /* position: relative; */
+  position: relative;
 }
 
-.quote::before {
+.quote::after {
   content: "";
   position: absolute;
   width: 100%;
