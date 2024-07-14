@@ -868,6 +868,7 @@ header nav .form i {
 
 .quote .container {
   position: relative;
+  z-index: 1;
 }
 
 .quote q {
