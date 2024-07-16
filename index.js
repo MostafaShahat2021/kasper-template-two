@@ -1,11 +1,23 @@
 
 // Toggle menu
 const toggleMenu = document.querySelector(".toggle-menu")
-const navLinks = document.querySelector(".nav-links")
+const navMenu = document.querySelector('.nav-menu')
 
 toggleMenu.addEventListener("click", () =>{
-  navLinks.classList.toggle("show")
+  navMenu.classList.toggle("show")
 })
+
+// Toggle active Class on Nav Item Click
+const navLinks = document.querySelectorAll('.nav-link');
+
+function handleNavItemClick(event) {
+  navLinks.forEach(link => link.classList.remove('active'));
+  event.target.classList.add('active');
+  navMenu.classList.toggle("show")
+}
+
+navLinks.forEach(link => link.addEventListener('click', handleNavItemClick));
+
 
 // plan hover effect
 const plans = document.querySelectorAll('.plan');
