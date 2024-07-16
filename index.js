@@ -7,16 +7,15 @@ toggleMenu.addEventListener("click", () =>{
   navMenu.classList.toggle("show")
 })
 
-// Toggle active Class on Nav Item Click
-const navLinks = document.querySelectorAll('.nav-link');
-
-function handleNavItemClick(event) {
-  navLinks.forEach(link => link.classList.remove('active'));
-  event.target.classList.add('active');
-  navMenu.classList.toggle("show")
-}
-
-navLinks.forEach(link => link.addEventListener('click', handleNavItemClick));
+// Toggle active Class on Nav Item Click with (Event Delegation)
+navMenu.addEventListener("click", (e)=>{
+  const target = e.target
+  if(target.classList.contains("nav-link")){
+    const navLinks = document.querySelectorAll('.nav-link')
+    navLinks.forEach((link) => link.classList.remove("active"))
+    target.classList.add("active")
+  }
+})
 
 
 // plan hover effect
