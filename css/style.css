@@ -1303,6 +1303,7 @@ header nav .form i {
 
 /* Scroll to top button */
 .scroll-to-top {
+  display: none;
   position: fixed;
   bottom: 30px;
   right: 30px;

@@ -41,3 +41,22 @@ plans.forEach((plan) => {
     plan.style.border = 'none';
   });
 });
+
+// Scroll to top btn
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
+
+scrollToTopBtn.addEventListener('click', scrollToTop);
+
+// Show/hide button based on scroll position
+window.addEventListener('scroll', () => {
+  window.scrollY > 200
+    ? (scrollToTopBtn.style.display = 'block')
+    : (scrollToTopBtn.style.display = 'none');
+});
