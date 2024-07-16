@@ -5,7 +5,8 @@
  * JS 
 ---
 ### Live Demo:
-[Kasper template](https://mostafashahat2021.github.io/kasper-template-two/)
+<!-- [Kasper template](https://mostafashahat2021.github.io/kasper-template-two/) -->
+<a href="https://mostafashahat2021.github.io/kasper-template-two/" target="_blank">Kasper template</a>
 
 ---
 ### Screenshot
