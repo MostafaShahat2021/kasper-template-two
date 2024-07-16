@@ -147,6 +147,7 @@ header nav {
 header nav .toggle-menu {
   color: var(--color-light);
   font-size: 22px;
+  cursor: pointer;
 }
 
 header nav .toggle-menu:hover header nav ul {
@@ -171,7 +172,8 @@ header nav ul {
     display: none;
   }
 
-  header nav .toggle-menu:hover+ul {
+  /* header nav .toggle-menu:hover+ul { */
+  .show {
     display: flex;
     flex-direction: column;
     align-items: normal;
@@ -1127,16 +1129,17 @@ header nav .form i {
   justify-content: space-between;
 }
 
-@media (max-width:767px){
+@media (max-width:767px) {
   .contact .content {
     flex-direction: column;
   }
 }
+
 .contact .container .content form {
   flex-basis: 70%;
 }
 
-.content form .main-input{
+.content form .main-input {
   display: block;
   width: 100%;
   margin-bottom: 30px;
@@ -1148,11 +1151,11 @@ header nav .form i {
   outline: none;
 }
 
-.content form textarea.main-input{
+.content form textarea.main-input {
   height: 200px;
 }
 
-.content form input[type="submit"]{
+.content form input[type="submit"] {
   display: flex;
   margin-left: auto;
   padding: 20px;
@@ -1165,7 +1168,7 @@ header nav .form i {
   transition: .3s;
 }
 
-.content form input[type="submit"]:hover{
+.content form input[type="submit"]:hover {
   background-color: var(--color-light);
   color: var(--main-color);
   border: 1px solid #ccc;
@@ -1183,40 +1186,44 @@ header nav .form i {
   text-transform: uppercase;
 }
 
-.contact .content .info .phone{
+.contact .content .info .phone {
   display: block;
   margin-bottom: 10px;
   color: var(--color-dark);
 }
 
 /* .contact .content .info h4:nth-last-of-type() */
-.contact .content .info h4:nth-of-type(2) { 
+.contact .content .info h4:nth-of-type(2) {
   margin-top: 80px;
 
 }
 
-.contact .content .info address{  
+.contact .content .info address {
   color: var(--color-dark);
   line-height: 1.8;
 }
 
-@media (max-width:767px){
+@media (max-width:767px) {
   .contact .info {
     order: -1;
     text-align: center;
   }
-  .contact .content .info h4:nth-of-type(2){
+
+  .contact .content .info h4:nth-of-type(2) {
     margin-top: 40px;
   }
-  .content form input[type="submit"]{
+
+  .content form input[type="submit"] {
     text-align: center;
     margin: 0 auto;
     width: 50%;
   }
+
   .contact .content .info address {
     margin-bottom: 30px;
   }
 }
+
 /* Contact */
 
 /* Footer */
@@ -1231,7 +1238,7 @@ header nav .form i {
   color: var(--color-light);
 }
 
-.footer::before{
+.footer::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -1284,11 +1291,12 @@ header nav .form i {
   color:#0654b9;
 } */
 
-.footer .copyright{
+.footer .copyright {
   margin-top: 40px;
 }
 
-.copyright span{
+.copyright span {
   color: var(--main-color);
 }
+
 /* Footer */
